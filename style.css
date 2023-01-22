@@ -1,3 +1,6 @@
+/* you can add google fonts this way as well */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
@@ -17,26 +20,66 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* padding on body and then the container space them from boundaries of screen and container */
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: var(--dark-blue);
+  font-size: 16px;
+  background-color: var(--dark-grayish-blue);
+  padding: 1.25rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  margin: 1..25rem;
+  margin: 1.25rem;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--dark-grayish-blue);
-  width: 400px;
+/* line height gives more space between lines of text */
+p {
+  font-size: 28px;
+  line-height: 1.5;
 }
 
-.web-divider {
-  width: 400px;
+/* 1rem = 16px */
+.container {
+  background-color: var(--grayish-blue);
+  padding: 1.25rem;
+  border-radius: 1rem;
 }
 
+/* used h1 for the advice number at top but made it small anyways */
+.container h1 {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
 
+.container p {
+  margin-bottom: 2rem;
+  color: var(--light-cyan);
+}
+
+.container picture img {
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--light-cyan);
+}
+
+/* give behavior on transitions */
+.attribution a {
+  color: hsl(228, 52%, 55%);
+  transition: color 0.3s ease-in-out;
+}
+
+/* give color on hover */
+.attribution a:hover {
+  color: hsl(228, 41%, 46%);
+}

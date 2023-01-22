@@ -6,27 +6,30 @@
   <!-- favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
   <title>Advice generator app</title>
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="wrapper">
-    <p>Advice #<span id="advice-number">{number_placeholder}</span></p>
-    <h3 id="advice-text">{api text}</h3>
-    <img class="web-divider" src="/images/pattern-divider-desktop.svg" alt="divider">
-    <img class="dice" src="/images/icon-dice.svg" alt="dice">
+  <div class="container">
+    <h1>Advice ID</h1>
+    <p id="advice-text">Advice Text</p>
+    <!-- picture is used to have different displays for screens (laptops and phones) -->
+    <!-- source is default, if screen width lower than 768px then the mobile img displays -->
+    <picture>
+      <source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+      <img src="./images/pattern-divider-mobile.svg" alt="divider img">
+    </picture>
+
+    <div class="dice">
+      <img class="dice" src="./images/icon-dice.svg" alt="dice">
+    </div>
+    
   </div>
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
