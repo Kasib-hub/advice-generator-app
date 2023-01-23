@@ -44,8 +44,9 @@ p {
 /* 1rem = 16px */
 .container {
   background-color: var(--grayish-blue);
-  padding: 1.5rem 2rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   border-radius: 1rem;
+  width: 480px;
 }
 
 /* used h1 for the advice number at top but made it small anyways */
@@ -63,7 +64,6 @@ p {
 }
 
 .container picture img {
-  margin-bottom: 1rem;
   color: #4F5D74;
 }
 
@@ -80,8 +80,8 @@ p {
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out;
   cursor: pointer;
-  position: absolute;
-  transform: translateX(-50%);
+  position: relative;
+  top: 35px;
 }
 
 .container button:hover {
